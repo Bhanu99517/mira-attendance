@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import type { User, SyllabusCoverage } from '../types';
-import { Role, Branch } from '../types';
-import { getAllSyllabusCoverage, updateSyllabusCoverage as apiUpdateSyllabusCoverage } from '../services';
-import { Icons } from '../constants';
-import { Modal } from '../components';
+import type { User, SyllabusCoverage } from '../src/types';
+import { Role, Branch } from '../src/types';
+import { getAllSyllabusCoverage, updateSyllabusCoverage as apiUpdateSyllabusCoverage } from '../src/services';
+import { Icons } from '../src/constants';
+import { Modal } from '../src/components';
 
 // Progress Update Modal Component
 const UpdateProgressModal: React.FC<{

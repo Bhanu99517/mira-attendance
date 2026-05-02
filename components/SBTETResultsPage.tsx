@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import type { User, SBTETResult } from '../types';
-import { Role } from '../types';
-import { getAllSbtetResultsForPin, getUserByPin } from '../services';
-import { Icons } from '../constants';
+import type { User, SBTETResult } from '../src/types';
+import { Role } from '../src/types';
+import { getAllSbtetResultsForPin, getUserByPin } from '../src/services';
+import { Icons } from '../src/constants';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';

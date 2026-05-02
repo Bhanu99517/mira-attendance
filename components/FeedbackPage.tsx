@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import type { User, Feedback } from '../types';
-import { Role } from '../types';
-import { getFeedback, submitFeedback, updateFeedbackStatus } from '../services';
-import { Icons } from '../constants';
+import type { User, Feedback } from '../src/types';
+import { Role } from '../src/types';
+import { getFeedback, submitFeedback, updateFeedbackStatus } from '../src/services';
+import { Icons } from '../src/constants';
 
 const FeedbackCard: React.FC<{ feedback: Feedback, onStatusChange: (id: string, status: Feedback['status']) => void, isAdmin: boolean }> = ({ feedback, onStatusChange, isAdmin }) => {
     const getStatusChip = (status: Feedback['status']) => {

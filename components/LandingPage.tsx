@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { Icons } from '../constants';
-import { User, AttendanceRecord, SBTETResult } from '../types';
-import { getStudentByPin, getAttendanceForUser, getAllSbtetResultsForPin } from '../services';
+import { Icons } from '../src/constants';
+import { User, AttendanceRecord, SBTETResult } from '../src/types';
+import { getStudentByPin, getAttendanceForUser, getAllSbtetResultsForPin } from '../src/services';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { User } from '../types';
+import { User } from '../src/types';
 import {
   getStudentByPin,
   getDistanceInKm,
@@ -8,8 +8,8 @@ import {
   CAMPUS_RADIUS_KM,
   markAttendance as apiMarkAttendance,
   verifyStudentFace,
-} from '../services';
-import { loadFaceModels, areFaceModelsLoaded } from '../faceRecognition';
+} from '../src/services';
+import { loadFaceModels, areFaceModelsLoaded } from '../src/faceRecognition';
 
 type Step = 'idle' | 'loading-models' | 'ready' | 'verifying-location' | 'verifying-face' | 'marking' | 'success' | 'error';
 

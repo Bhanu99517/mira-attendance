@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import type { Application, User } from '../types';
-import { Role, ApplicationType, ApplicationStatus } from '../types';
+import type { Application, User } from '../src/types';
+import { Role, ApplicationType, ApplicationStatus } from '../src/types';
 import { 
     submitApplication, 
     getApplicationsByPin, 
@@ -9,8 +9,8 @@ import {
     getApplications, 
     updateApplicationStatus, 
     sendEmail 
-} from '../services';
-import { Icons } from '../constants';
+} from '../src/services';
+import { Icons } from '../src/constants';
 
 // --- Shared Components & Utilities ---
 const inputClasses = "mt-1 block w-full px-3 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition";

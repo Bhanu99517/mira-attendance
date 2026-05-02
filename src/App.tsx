@@ -10,19 +10,19 @@ import { Icons, navLinks } from './constants';
 import { Role, Branch, User, Page, AttendanceRecord, Application, PPTContent, QuizContent, LessonPlanContent, LLMOutput } from './types';
 import { login as apiLogin, getFaculty, getDashboardStats, getStudentByPin, markAttendance, getAttendanceForUser, sendEmail, cogniCraftService, sendLoginOtp, verifyLoginOtp } from './services';
 import { SplashScreen, PermissionsPrompt, Modal, StatCard, ActionCard } from './components';
-import ManageUsersPage from './components/ManageUsersPage';
-import ReportsPage from './components/ReportsPage';
-import ApplicationsPage from './components/ApplicationsPage';
-import AttendanceLogPage from './components/AttendanceLogPage';
-import SBTETResultsPage from './components/SBTETResultsPage';
-import SyllabusPage from './components/SyllabusPage';
-import TimetablesPage from './components/TimetablesPage';
-import FeedbackPage from './components/FeedbackPage';
-import SettingsPage from './components/SettingsPage';
-import LandingPage from './components/LandingPage';
-import NotebookLLMPage from './components/NotebookLLMPage';
-import PrivacyPolicyPage from './components/PrivacyPolicyPage';
-import ManageCollegesPage from './components/ManageCollegesPage';
+import ManageUsersPage from '../components/ManageUsersPage';
+import ReportsPage from '../components/ReportsPage';
+import ApplicationsPage from '../components/ApplicationsPage';
+import AttendanceLogPage from '../components/AttendanceLogPage';
+import SBTETResultsPage from '../components/SBTETResultsPage';
+import SyllabusPage from '../components/SyllabusPage';
+import TimetablesPage from '../components/TimetablesPage';
+import FeedbackPage from '../components/FeedbackPage';
+import SettingsPage from '../components/SettingsPage';
+import LandingPage from '../components/LandingPage';
+import NotebookLLMPage from '../components/NotebookLLMPage';
+import PrivacyPolicyPage from '../components/PrivacyPolicyPage';
+import ManageCollegesPage from '../components/ManageCollegesPage';
 
 
 // --- CONTEXTS ---

@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { getUsers, getAttendanceForDate, getAttendanceForDateRange } from '../services';
-import type { User, AttendanceRecord } from '../types';
-import { Role } from '../types';
-import { Icons } from '../constants';
+import { getUsers, getAttendanceForDate, getAttendanceForDateRange } from '../src/services';
+import type { User, AttendanceRecord } from '../src/types';
+import { Role } from '../src/types';
+import { Icons } from '../src/constants';
 
 const BRANCH_OPTIONS = ['All Students', 'CS', 'EC', 'EEE', 'Faculty'];
 const BATCH_OPTIONS = [

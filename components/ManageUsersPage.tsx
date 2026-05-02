@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { getUsers, addUser, updateUser, deleteUser, getAllSbtetResultsForPin, saveSbtetResult, getColleges } from '../services';
-import type { User, SBTETResult, College } from '../types';
-import { Role } from '../types';
+import { getUsers, addUser, updateUser, deleteUser, getAllSbtetResultsForPin, saveSbtetResult, getColleges } from '../src/services';
+import type { User, SBTETResult, College } from '../src/types';
+import { Role } from '../src/types';
 import { PlusIcon, EditIcon, DeleteIcon, IdCardIcon } from './Icons';
-import { RolePill, Modal } from '../components';
-import { Icons } from '../constants';
+import { RolePill, Modal } from '../src/components';
+import { Icons } from '../src/constants';
 
 const createAvatar = (seed: string) => `https://api.dicebear.com/8.x/initials/svg?seed=${encodeURIComponent(seed)}`;
 

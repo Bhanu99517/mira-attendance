@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Icons } from '../constants';
-import { PPTContent, QuizContent, LessonPlanContent, LLMOutput } from '../types';
-import { cogniCraftService } from '../services';
-import { ActionCard } from '../components';
+import { Icons } from '../src/constants';
+import { PPTContent, QuizContent, LessonPlanContent, LLMOutput } from '../src/types';
+import { cogniCraftService } from '../src/services';
+import { ActionCard } from '../src/components';
 
 // Type guards for LLM output
 const isPPTContent = (output: any): output is PPTContent => output && typeof output === 'object' && 'slides' in output;
